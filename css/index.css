@@ -1,0 +1,151 @@
+html{ font-size: 3.33333vw;}
+
+@media (max-width: 350px) {
+  body {
+    /* background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    min-width: 350px; */
+    background-size: 370px auto!important; /* 设置背景图片的最小宽度为600像素，高度自适应 */
+  }
+}
+
+@media (min-width: 800px) {        
+  html {                          
+    font-size: 28.8px;            
+  }                                
+}                                  
+
+@media (min-width: 1200px) {       
+  html {                          
+    font-size: 57.6px;                
+  }                                
+}   
+body {
+  background-image: url("../img/background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  min-width: 350px;
+}
+
+.container {
+  width: 100%;
+  height: 30rem;
+  /* background-color: aqua; */
+  margin-top: 35rem;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1rem;
+  color: #dffbab;
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-size: 1.5rem;
+  color: #ffe93d;
+}
+
+/* 道具 */
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.prop {
+  width: 35%;
+}
+.img {
+  width: 105%;
+  height: 0;
+  padding-bottom: 100%;
+  background-image: url('../img/greenbox.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-size: 0.3rem;
+  position: relative;
+}
+.parent {
+  display:table-cell;
+  vertical-align:middle;
+}
+.img-title{
+  padding-top: 0.1rem;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -70%);
+  font-size: 1rem;
+}
+
+.parent .space{
+  bottom: 22%;
+}
+.img-name{
+  text-align: center; /*设置文本水平居中*/
+  padding: 0px 20px;
+  width: 70%;
+  position: absolute;
+  bottom: 16%;
+  color: #e8ffbc;
+}
+.conditions{
+  color: #e8ffbc;
+  text-align: center;
+  margin-bottom: 1vh;
+  font-size: 30%;
+}
+.get img {
+  width: 100%;
+}
+
+/* 积分状况 */
+.score{
+  margin-top: 2vh;
+}
+.score-box{
+  width: 100%;
+  height: 6vh;
+  background-image: url('../img/kuang.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #dffbab;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+.now{
+  padding-left: 1.5rem;
+  background: url('../img/jifen.png') no-repeat;
+  background-size: auto 100%;
+}
+.method1{
+  margin-bottom: 0.3vh;
+}
+.score-box span{
+  color: #ffe93d;
+}
+.score-btn{
+  display: flex;
+  justify-content: center;
+}
+.score-btn img{
+  width: 40%;
+}
+
+/* 侧边栏 */
+.asider{
+  width: 1.8rem;
+  position: absolute;
+  top: 35rem;
+  right: 1vw;
+  font-size: 1rem;
+  color: #fef8eb;
+}
+.rules, .share{
+  width: 100%;
+}
